@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Play Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">My Play Store</div>
+        <input type="text" placeholder="Search">
+    </header>
+
+    <nav class="sidebar">
+        <ul>
+            <li data-section="entertainment">Entertainment</li>
+            <li data-section="apps">Apps</li>
+            <li data-section="movies" class="active">Movies</li>
+            <li data-section="books">Books</li>
+            <li data-section="devices">Devices</li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Entertainment Section -->
+        <section id="entertainment" class="content-section">
+            <h2>Entertainment Section</h2>
+            <p>All entertainment related content...</p>
+        </section>
+
+        <!-- Apps Section -->
+        <section id="apps" class="content-section">
+            <h2>Apps Section</h2>
+            <p>All app related content...</p>
+        </section>
+
+        <!-- Movies Section -->
+        <section id="movies" class="content-section active">
+            <h2>New release hit films</h2>
+            <div class="movies">
+                <div class="movie">
+                    <img src="image/dshd.jpg" alt="">
+                    <p>Bhangra Paa Le</p>
+                    <span>₹100.00</span>
+                </div>
+                <div class="movie">
+                    <img src="image/dshd.jpg" alt="">
+                    <p>Mardaani 2</p>
+                    <span>₹75.00</span>
+                </div>
+                <div class="movie">
+                    <img src="https://via.placeholder.com/150x220" alt="">
+                    <p>Birds of Prey</p>
+                    <span>₹150.00</span>
+                </div>
+                <div class="movie">
+                    <img src="image/ChatGPT Image Aug 13, 2025, 12_17_30 PM.png" alt="">
+                    <p>Affraa Taffri</p>
+                    <span>₹100.00</span>
+                </div>
+                <div class="movie">
+                    <img src="https://via.placeholder.com/150x220" alt="">
+                    <p>The Broken Hearts Gallery</p>
+                    <span>₹120.00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books Section -->
+        <section id="books" class="content-section">
+            <h2>Books Section</h2>
+            <p>All book related content...</p>
+        </section>
+
+        <!-- Devices Section -->
+        <section id="devices" class="content-section">
+            <h2>Devices Section</h2>
+            <p>All device related content...</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

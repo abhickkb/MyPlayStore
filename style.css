@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f2027; /* dark background */
+    color: #e0e0e0;
+}
+
+/* Header */
+header {
+    background: #1a1a1a;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+header input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: #2c2c2c;
+    color: white;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(180deg, #141e30, #243b55);
+    padding: 20px;
+    width: 220px;
+    height: 100vh;
+    float: left;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid #111;
+    box-shadow: 2px 0 15px rgba(0,0,0,0.4);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 12px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.sidebar li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+    color: #ffe600;
+}
+
+/* Active */
+.sidebar li.active {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Main */
+main {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Movies */
+.movies {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background: #1f1f1f;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.movie:hover {
+    transform: translateY(-5px);
+}
+
+.movie img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.movie span {
+    display: block;
+    color: #00e676;
+    font-weight: bold;
+    margin-top: 5px;
+}
